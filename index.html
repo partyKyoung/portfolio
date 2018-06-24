@@ -4,62 +4,69 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-    crossorigin="anonymous">
-  <link rel="stylesheet" href="./css/index.css" />
   <title>박유경 포트폴리오</title>
 </head>
 
 <body>
   <header class="portfolio-header">
-    <h1>PORTFOLIO</h1>
+    <h1 class="portfolio-logo">PORTFOLIO</h1>
+    <nav class="portfolio-nav">
+      <ul>
+        <li>About me</li>
+        <li>MY Skill</li>
+        <li>About me</li>
+      </ul>
+    </nav>
   </header>
   <section class="portfolio container">
-    <div class="section d-flex justify-content-center">
-      <div class="float-left ml-3">
-        <img src="./images/me.jpg" class="profile-image" alt="프로필 이미지" />
+    <div class="section">
+      <div class="slide">
+        <img src="./images/me.jpg" class="about-me about-me-profile-image" alt="프로필 이미지" />
+        <ul class="about-me about-me-profile">
+          <li>
+            <h2>박유경</h2>
+            <h3>Web Front-end Developer</h3>
+          </li>
+          <li>1993. 09. 20</li>
+          <li>서울시 관악구 거주</li>
+          <li>kyoungah@kyoungah.com</li>
+        </ul>
+        <ul>
+          <li>깃허브</li>
+          <li>페이스북</li>
+          <li>일상 블로그</li>
+          <li>개발 블로그</li>
+        </ul>
       </div>
-      <ul class="float-left">
-        <li>
-          <h2>박유경</h2>
-          <h3>Web Front-end Developer</h3>
-        </li>
-        <li>1993. 09. 20</li>
-        <li>서울시 관악구 거주</li>
-        <li>kyoungah@kyoungah.com</li>
-      </ul>
-      <ul>
-        <li>깃허브</li>
-        <li>페이스북</li>
-        <li>일상 블로그</li>
-        <li>개발 블로그</li>
-      </ul>
-    </div>
     </div>
     <div class="section">
-      <h2>스킬</h2>
-      <ul>
-        <li>Html5/Css/Sass(Scss)</li>
-        <li>JavaScript</li>
-        <li>React.js</li>
-        <li>Vue.js</li>
-        <li>Node.js</li>
-        <li>jQuery</li>
-      </ul>
+      <div class="slide">
+        <h2>스킬</h2>
+        <ul>
+          <li>Html5/Css/Sass(Scss)</li>
+          <li>JavaScript</li>
+          <li>React.js</li>
+          <li>Vue.js</li>
+          <li>Node.js</li>
+          <li>jQuery</li>
+        </ul>
+      </div>
     </div>
     <div class="section">
-      <h2>경력</h2>
-      <ul>
-        <li>일인상점 Front-end 개발자 </li>
-        <li>트래포트 Front-end 개발자</li>
-      </ul>
+      <div class="slide">
+        <h2>경력</h2>
+        <ul>
+          <li>일인상점 Front-end 개발자 </li>
+          <li>트래포트 Front-end 개발자</li>
+        </ul>
+      </div>
     </div>
   </section>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script type="text/javascript" src="./js/fullpage.js/vendors/scrolloverflow.min.js"></script>
   <script type="text/javascript" src="./js/fullpage.js/dist/jquery.fullPage.js"></script>
-  <script type="text/javascript" src="./js/index.js"></script>
+  <script type="text/javascript" src="./build/bundle.js"></script>
 </body>
 
 </html>
