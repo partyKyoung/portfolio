@@ -1,6 +1,8 @@
 $header-height: 100px;
 $header-child-height: $header-height / 2;
 
+$primary-color: #58cbff;
+
 .portfolio-header {
   position: fixed;
   top: 0;
@@ -8,7 +10,7 @@ $header-child-height: $header-height / 2;
   width: 100%;
   height: $header-height;
   text-align: center;
-  background-color: #58cbff;
+  background-color: $primary-color;
   color: #fff;
   font-size: 16px;
 }
@@ -21,6 +23,9 @@ $header-child-height: $header-height / 2;
 .portfolio-nav {
   height: $header-child-height;
   line-height: $header-child-height;
+  background-color: #fff;
+  border-bottom: 1px solid $primary-color;
+  color: $primary-color;
 
   ul {
     margin-left: auto;

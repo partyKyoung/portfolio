@@ -1,0 +1,14 @@
+$image-size: 250px;
+
+.about-me-profile {
+  display: flex;
+  margin-top: 200px;
+  img {
+    width: $image-size;
+    height: $image-size;
+  }
+
+  ul {
+    padding: 0 10px;
+  }
+}
