@@ -13,5 +13,8 @@ module.exports = {
         use: ["style-loader", "css-loader", "sass-loader"]
       }
     ]
+  },
+  devServer: {
+    port: 8080
   }
 };
