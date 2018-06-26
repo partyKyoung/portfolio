@@ -8,8 +8,29 @@ $image-size: 250px;
     width: $image-size;
     height: $image-size;
   }
+}
 
-  ul {
-    padding: 0 10px;
+.about-me-profile-info {
+  padding: 0 16px;
+
+  li {
+    margin-bottom: 10px;
   }
+
+  i {
+    width: 15px;
+    height: 16px;
+    margin-right: 10px;
+  }
+
+  a {
+    &:visited {
+      color: #000;
+    }
+  }
+}
+
+.about-me-introduce {
+  margin-top: 16px;
+  line-height: 1.5;
 }
