@@ -1,20 +1,74 @@
+@import "./breakpoint.scss";
+
+$xs-mobile-image-size: 80px;
+$mobile-image-size: 100px;
 $image-size: 250px;
 
 .about-me-profile {
+  margin-top: 100px;
   display: flex;
-  margin-top: 170px;
+  flex-flow: row;
+  justify-content: center;
+
+  @include max-width-phone {
+    margin-top: 95px;
+    flex-flow: column;
+  }
+
+  @include max-width-small-phone {
+    font-size: 14px;
+  }
+
+  .about-me-profile-info {
+    width: $image-size;
+
+    @include max-width-phone {
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
 
   img {
-    width: $image-size;
-    height: $image-size;
+    width: $mobile-image-size;
+    height: $mobile-image-size;
+    display: block;
+
+    @include min-width-tablet {
+      width: $image-size;
+      height: $image-size;
+    }
+
+    @include max-width-phone {
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    @include max-width-small-phone {
+      width: $xs-mobile-image-size;
+      height: $xs-mobile-image-size;
+    }
+  }
+
+  h2,
+  h3 {
+    @include max-width-phone {
+      margin-top: 10px;
+      text-align: center;
+    }
+  }
+
+  h2 {
+    margin-bottom: 10px;
   }
 }
 
 .about-me-profile-info {
-  padding: 0 16px;
+  ul {
+    padding: 0 16px;
+  }
 
   li {
-    margin-bottom: 10px;
+    margin-bottom: 8px;
   }
 
   i {
@@ -31,6 +85,17 @@ $image-size: 250px;
 }
 
 .about-me-introduce {
-  margin-top: 16px;
+  width: $image-size * 2;
+  margin: 16px auto 0;
   line-height: 1.5;
+
+  @include max-width-phone {
+    width: 100%;
+    padding: 0 16px;
+    box-sizing: border-box;
+  }
+
+  @include max-width-small-phone {
+    font-size: 14px;
+  }
 }

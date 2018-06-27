@@ -1,5 +1,6 @@
-$header-height: 100px;
-$header-child-height: $header-height / 2;
+$header-logo-height: 50px;
+$header-nav-height: 30px;
+$header-height: $header-logo-height + $header-nav-height;
 
 $primary-color: #58cbff;
 
@@ -16,13 +17,13 @@ $primary-color: #58cbff;
 }
 
 .portfolio-logo {
-  height: $header-child-height;
-  line-height: $header-child-height;
+  height: $header-logo-height;
+  line-height: $header-logo-height;
 }
 
 .portfolio-nav {
-  height: $header-child-height;
-  line-height: $header-child-height;
+  height: $header-nav-height;
+  line-height: $header-nav-height;
   background-color: #fff;
   border-bottom: 1px solid $primary-color;
   color: $primary-color;
@@ -39,7 +40,7 @@ $primary-color: #58cbff;
   li {
     width: 33.33%;
     height: 100%;
-    line-height: 50px;
+    line-height: $header-nav-height;
     list-style-type: none;
   }
 }

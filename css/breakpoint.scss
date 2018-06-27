@@ -1,0 +1,55 @@
+@import "./variables.scss";
+
+@mixin only-small-phone {
+  @media (min-width: 0) and (max-width: map-get($breakpoints, x-small)) {
+    @content;
+  }
+}
+
+@mixin max-width-small-phone {
+  @media (max-width: map-get($breakpoints, x-small)) {
+    @content;
+  }
+}
+
+@mixin only-phone {
+  @media (min-width: map-get($breakpoints, small)) and (max-width: map-get($breakpoints, medium) - 1) {
+    @content;
+  }
+}
+
+@mixin min-width-phone {
+  @media (min-width: map-get($breakpoints, x-small)) {
+    @content;
+  }
+}
+
+@mixin max-width-phone {
+  @media (max-width: map-get($breakpoints, medium) - 1) {
+    @content;
+  }
+}
+
+@mixin only-tablet {
+  @media (min-width: map-get($breakpoints, medium)) and (max-width: map-get($breakpoints, large) - 1) {
+    @content;
+  }
+}
+
+@mixin min-width-tablet {
+  @media (min-width: map-get($breakpoints, medium)) {
+    @content;
+  }
+}
+
+@mixin max-width-tablet {
+  @media (max-width: map-get($breakpoints, large) - 1) {
+    @content;
+  }
+}
+
+@mixin min-width-desktop {
+  @media (min-width: map-get($breakpoints, large)) {
+    @content;
+  }
+}
