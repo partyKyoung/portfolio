@@ -13,10 +13,16 @@
   <header class="portfolio-header">
     <h1 class="portfolio-logo">PORTFOLIO</h1>
     <nav class="portfolio-nav">
-      <ul>
-        <li>About me</li>
-        <li>MY Skill</li>
-        <li>About me</li>
+      <ul id="portfolio-nav-menu">
+        <li data-menuanchor="aboutMe">
+          <a href="#aboutMe">First slide</a>
+          <About Me</li>
+            <li data-menuanchor="mySkill">
+              <a href="#mySkill">My Skill</a>
+            </li>
+            <li data-menuanchor="myCareer">
+              <a href="#myCareer">My Career</a>
+            </li>
       </ul>
     </nav>
   </header>
@@ -74,14 +80,26 @@
     </div>
     <div class="section">
       <div class="slide">
-        <h2>스킬</h2>
-        <ul>
-          <li>Html5/Css/Sass(Scss)</li>
-          <li>JavaScript</li>
-          <li>React.js</li>
-          <li>Vue.js</li>
-          <li>Node.js</li>
-          <li>jQuery</li>
+        <h2>My Develop Skill</h2>
+        <ul class="my-skill">
+          <li>
+            <div class="my-skill-panel">Html5/Css/Sass(Scss)</div>
+          </li>
+          <li>
+            <div class="my-skill-panel">JavaScript</div>
+          </li>
+          <li>
+            <div class="my-skill-panel">React.js</div>
+          </li>
+          <li>
+            <div class="my-skill-panel">Vue.js</div>
+          </li>
+          <li>
+            <div class="my-skill-panel">Node.js</div>
+          </li>
+          <li>
+            <div class="my-skill-panel">jQuery</div>
+          </li>
         </ul>
       </div>
     </div>
@@ -89,8 +107,22 @@
       <div class="slide">
         <h2>경력</h2>
         <ul>
-          <li>일인상점 Front-end 개발자 </li>
-          <li>트래포트 Front-end 개발자</li>
+          <li>
+            <h3>일인상점 Front-end 개발자</h3>
+            <div>
+              <span>2017.08 ~ 현재 재직 중</span>
+              플랜티 개발
+              <br/> 일인상점 개발 중
+            </div>
+          </li>
+          <li>
+            <h3>트래포트 Front-end 개발자</h3>
+            <div>
+              <span>2016.07 ~ 2017.07</span>
+              트래블하우 호텔 유지보수
+              <br/> 트래블하우 관리자 메뉴 신규 개발 및 유지보수
+            </div>
+          </li>
         </ul>
       </div>
     </div>

@@ -1,8 +1,8 @@
-$header-logo-height: 50px;
-$header-nav-height: 30px;
-$header-height: $header-logo-height + $header-nav-height;
+@import "./variables.scss";
 
-$primary-color: #58cbff;
+$header-logo-height: 40px;
+$header-nav-height: 40px;
+$header-height: $header-logo-height + $header-nav-height;
 
 .portfolio-header {
   position: fixed;
@@ -11,7 +11,7 @@ $primary-color: #58cbff;
   width: 100%;
   height: $header-height;
   text-align: center;
-  background-color: $primary-color;
+  background-color: $brand-color;
   color: #fff;
   font-size: 16px;
 }
@@ -25,8 +25,8 @@ $primary-color: #58cbff;
   height: $header-nav-height;
   line-height: $header-nav-height;
   background-color: #fff;
-  border-bottom: 1px solid $primary-color;
-  color: $primary-color;
+  border-bottom: 1px solid $brand-color;
+  color: $brand-color;
 
   ul {
     margin-left: auto;
@@ -42,6 +42,10 @@ $primary-color: #58cbff;
     height: 100%;
     line-height: $header-nav-height;
     list-style-type: none;
+  }
+
+  a:visited {
+    color: $brand-color;
   }
 }
 

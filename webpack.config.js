@@ -15,6 +15,7 @@ module.exports = {
     ]
   },
   devServer: {
+    contentBase: "/",
     port: 8080
   }
 };
