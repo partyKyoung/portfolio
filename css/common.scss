@@ -1,4 +1,5 @@
 @import "./variables.scss";
+@import "./breakpoint.scss";
 
 html,
 body,
@@ -98,6 +99,7 @@ body {
 
 body {
   font-family: "Noto Sans Korean", sans-serif;
+  color: $black-color;
 }
 
 /* HTML5 display-role reset for older browsers */
@@ -269,4 +271,14 @@ input[type="search"]::-webkit-search-cancel-button {
 h2 {
   text-align: center;
   color: $brand-color;
+}
+
+.slide {
+  width: 100%;
+  max-width: 700px;
+  margin: 130px auto;
+
+  @include max-width-phone {
+    margin-top: 100px;
+  }
 }

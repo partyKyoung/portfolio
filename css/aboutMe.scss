@@ -1,3 +1,4 @@
+@import "./variables.scss";
 @import "./breakpoint.scss";
 
 $xs-mobile-image-size: 80px;
@@ -5,7 +6,7 @@ $mobile-image-size: 100px;
 $image-size: 250px;
 
 .about-me-profile {
-  margin-top: 100px;
+  color: $black-color;
   display: flex;
   flex-flow: row;
   justify-content: center;
@@ -58,6 +59,7 @@ $image-size: 250px;
   }
 
   h2 {
+    color: $black-color;
     margin-bottom: 10px;
   }
 }
@@ -72,14 +74,18 @@ $image-size: 250px;
   }
 
   i {
+    color: $black-color;
     width: 15px;
     height: 16px;
     margin-right: 10px;
   }
 
   a {
+    background: 0 0;
+    text-decoration: underline;
+
     &:visited {
-      color: #000;
+      color: $black-color;
     }
   }
 }

@@ -1,4 +1,38 @@
+@import "./variables.scss";
+@import "./breakpoint.scss";
+
 .my-skill {
-  column-count: 3;
-  column-gap: 0;
+  display: flex;
+  flex-flow: row wrap;
+  width: 100%;
+  padding: 16px;
+  box-sizing: border-box;
+}
+
+.my-skill-panel {
+  flex: auto;
+  text-align: center;
+  height: 100px;
+  line-height: 100px;
+  font-size: 1.25rem;
+  min-width: 25%;
+  margin: 3px;
+  color: $black-color;
+  border: 1px solid $brand-color;
+
+  &.emphasis {
+    font-weight: 600;
+    font-size: 1.5625rem;
+    background-color: $brand-color;
+    color: $white-color;
+
+    @include max-width-small-phone {
+      font-size: 1.5rem;
+    }
+  }
+}
+
+.my-skill-text {
+  margin-top: 10px;
+  text-align: center;
 }
