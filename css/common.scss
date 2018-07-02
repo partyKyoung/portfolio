@@ -225,6 +225,7 @@ a {
   vertical-align: baseline;
   background: transparent;
   text-decoration: none;
+  color: $black-color;
 }
 
 /* Form Reset */
@@ -273,12 +274,32 @@ h2 {
   color: $brand-color;
 }
 
-.slide {
-  width: 100%;
+.slide-panel {
   max-width: 700px;
+  width: 100%;
   margin: 130px auto;
 
   @include max-width-phone {
     margin-top: 100px;
+  }
+}
+
+#portfolio {
+  -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadein 2s; /* Firefox < 16 */
+  -ms-animation: fadein 2s; /* Internet Explorer */
+  -o-animation: fadein 2s; /* Opera < 12.1 */
+  animation: fadein 2s;
+}
+
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0, 5;
+  }
+  100% {
+    opacity: 1;
   }
 }

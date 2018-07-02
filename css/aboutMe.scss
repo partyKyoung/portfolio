@@ -67,6 +67,10 @@ $image-size: 250px;
 .about-me-profile-info {
   ul {
     padding: 0 16px;
+
+    @include max-width-phone {
+      padding: 0;
+    }
   }
 
   li {
@@ -98,6 +102,7 @@ $image-size: 250px;
   @include max-width-phone {
     width: 100%;
     padding: 0 16px;
+    margin-top: 10px;
     box-sizing: border-box;
   }
 

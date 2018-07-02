@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
     crossorigin="anonymous">
+  <link rel="stylesheet" href="./css/loading.css">
   <title>박유경 포트폴리오</title>
 </head>
 
@@ -26,108 +27,113 @@
       </ul>
     </nav>
   </header>
-  <section class="portfolio container">
+  <section class="loading">
+    <div class="loader"></div>
+  </section>
+  <section id="portfolio">
     <div class="section">
       <div class="slide about-me">
-        <div class="about-me-profile">
-          <img src="./images/me.jpg" class="about-me-profile-image" alt="프로필 이미지" />
-          <div class="about-me-profile-info">
-            <ul>
-              <li>
-                <h2 className="about-me-my-name">박유경</h2>
-                <h3>Web Front-end Developer</h3>
-              </li>
-              <li>
-                <i class="fas fa-birthday-cake"></i>1993. 09. 20
-              </li>
-              <li>
-                <i class="fas fa-map-marker-alt"></i>서울시 관악구 거주
-              </li>
-              <li>
-                <i class="fas fa-envelope"></i> youngah@kyoungah.com
-              </li>
-            </ul>
-            <ul>
-              <li>
-                <a href="https://github.com/partyKyoung">
-                  <i class="fab fa-github-square"></i>깃허브
-                </a>
-              </li>
-              <li>
-                <a href="https://www.facebook.com/kyoungah8D">
-                  <i class="fab fa-facebook-square"></i>페이스북
-                </a>
-              </li>
-              <li>
-                <a href="http://daily.kyoungah.com/">
-                  <i class="fab fa-internet-explorer"></i>일상 블로그
-                </a>
-              </li>
-              <li>
-                <a href="http://dev.kyoungah.com/">
-                  <i class="fab fa-js-square"></i>개발 블로그
-                </a>
-              </li>
-            </ul>
+        <div class="slide-panel">
+          <div class="about-me-profile">
+            <img src="./images/me.jpg" class="about-me-profile-image" alt="프로필 이미지" />
+            <div class="about-me-profile-info">
+              <ul>
+                <li>
+                  <h2 className="about-me-my-name">박유경</h2>
+                  <h3>Web Front-end Developer</h3>
+                </li>
+                <li>
+                  <i class="fas fa-birthday-cake"></i>1993. 09. 20
+                </li>
+                <li>
+                  <i class="fas fa-map-marker-alt"></i>서울시 관악구 거주
+                </li>
+                <li>
+                  <i class="fas fa-envelope"></i> youngah@kyoungah.com
+                </li>
+              </ul>
+              <ul>
+                <li>
+                  <a href="https://github.com/partyKyoung">
+                    <i class="fab fa-github-square"></i>깃허브
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.facebook.com/kyoungah8D">
+                    <i class="fab fa-facebook-square"></i>페이스북
+                  </a>
+                </li>
+                <li>
+                  <a href="http://daily.kyoungah.com/">
+                    <i class="fab fa-internet-explorer"></i>일상 블로그
+                  </a>
+                </li>
+                <li>
+                  <a href="http://dev.kyoungah.com/">
+                    <i class="fab fa-js-square"></i>개발 블로그
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="about-me-introduce">
+            여행, 만화, 음악, 그리고 개발을 좋아하는 개발자 입니다. 실무와 이론의 밸런스를 맞추며 열심히 공부하고 익히고 있습니다. 프론트엔드 개발자를 넘어서 풀스택 개발자가 되는 것이 목표 입니다.
           </div>
         </div>
-        <div class="about-me-introduce">
-          여행, 만화, 음악, 그리고 개발을 좋아하는 개발자 입니다.
-          <br/>실무와 이론의 밸런스를 맞추며 열심히 공부하고 익히고 있습니다.
-          <br /> 프론트엔드 개발자를 넘어서 풀스택 개발자가 되는 것이 목표 입니다.
+      </div>
+    </div>
+    <div class="section">
+      <div class="slide">
+        <div class="slide-panel">
+          <h2>My Develop Skill</h2>
+          <ul class="my-skill">
+            <li class="my-skill-panel emphasis">JavaScript</li>
+            <li class="my-skill-panel emphasis">React.js</li>
+            <li class="my-skill-panel">Vue.js</li>
+            <li class="my-skill-panel">Node.js</li>
+            <li class="my-skill-panel">jQuery</li>
+            <li class="my-skill-panel emphasis">html5/Css/Sass(Scss)</li>
+          </ul>
+          <div class="my-skill-text">열심히 공부해서 더 추가할 예정입니다.</div>
         </div>
       </div>
     </div>
     <div class="section">
       <div class="slide">
-        <h2>My Develop Skill</h2>
-        <ul class="my-skill">
-          <li class="my-skill-panel emphasis">JavaScript</li>
-          <li class="my-skill-panel emphasis">React.js</li>
-          <li class="my-skill-panel">Vue.js</li>
-          <li class="my-skill-panel">Node.js</li>
-          <li class="my-skill-panel">jQuery</li>
-          <li class="my-skill-panel emphasis">html5/Css/Sass(Scss)</li>
-        </ul>
-        <div class="my-skill-text">열심히 공부해서 더 추가할 예정입니다.</div>
-      </div>
-    </div>
-    <div class="section">
-      <div class="slide">
-        <h2>My Career</h2>
-        <ul class="my-career">
-          <li class="my-career-panel">
-            <h3>일인상점 Front-end 개발자</h3>
-            <div>
+        <div class="slide-panel">
+          <h2>My Career</h2>
+          <ul class="my-career">
+            <li class="my-career-panel">
+              <h3>일인상점 Front-end 개발자</h3>
               <span>2017.08 ~ 현재 재직 중</span>
               <ul class="my-career-work">
                 <li>플랜티 개발</li>
                 <li>일인상점 개발 중</li>
               </ul>
-
-              <br/>
-            </div>
-          </li>
-          <li class="my-career-panel">
-            <h3>트래포트 Front-end 개발자</h3>
-            <div>
+            </li>
+            <li class="my-career-panel">
+              <h3>트래포트 Front-end 개발자</h3>
               <span>2016.07 ~ 2017.07</span>
               <ul class="my-career-work">
                 <li>트래블하우 호텔 유지보수</li>
                 <li>트래블하우 관리자 메뉴 신규 개발 및 유지보수</li>
               </ul>
-              <br/>
-            </div>
-          </li>
-        </ul>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
   </section>
-
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script type="text/javascript" src="./js/fullpage.js/vendors/scrolloverflow.min.js"></script>
-  <script type="text/javascript" src="./js/fullpage.js/dist/jquery.fullPage.js"></script>
   <script type="text/javascript" src="./build/bundle.js"></script>
+  <script>
+    setTimeout(function () {
+      var loading = document.getElementsByClassName('loading')[0];
+      var portfolio = document.getElementById('portfolio');
+
+      loading.style.display = 'none';
+      portfolio.style.display = 'block';
+    }, 3000);
+  </script>
 </body>
 
 </html>
