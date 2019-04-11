@@ -1,112 +1,53 @@
 @import "./variables.scss";
 @import "./breakpoint.scss";
 
-$xs-mobile-image-size: 80px;
-$mobile-image-size: 100px;
-$image-size: 250px;
+.about-me {
+  margin-left: auto;
+  margin-right: auto;
 
-.about-me-profile {
-  color: $black-color;
-  display: flex;
-  flex-flow: row;
-  justify-content: center;
-
-  @include max-width-phone {
-    margin-top: 95px;
-    flex-flow: column;
+  @include sm {
+    width: map-get($breakpoints, small);
   }
 
-  @include max-width-small-phone {
-    font-size: 14px;
-  }
+  h2 {
+    margin-top: 16px;
+    margin-bottom: 8px;
+    color: $black-color;
 
-  .about-me-profile-info {
-    width: $image-size;
-
-    @include max-width-phone {
-      margin-left: auto;
-      margin-right: auto;
+    @include x-sm {
+      margin-top: 16px;
+      margin-bottom: 16px;
     }
   }
 
-  img {
-    width: $mobile-image-size;
-    height: $mobile-image-size;
-    display: block;
-
-    @include min-width-tablet {
-      width: $image-size;
-      height: $image-size;
-    }
-
-    @include max-width-phone {
-      margin-left: auto;
-      margin-right: auto;
-    }
-
-    @include max-width-small-phone {
-      width: $xs-mobile-image-size;
-      height: $xs-mobile-image-size;
-    }
+  h3 {
+    margin-bottom: 16px;
   }
 
   h2,
   h3 {
-    @include max-width-phone {
-      margin-top: 10px;
-      text-align: center;
-    }
-  }
-
-  h2 {
-    color: $black-color;
-    margin-bottom: 10px;
+    text-align: center;
   }
 }
 
-.about-me-profile-info {
-  ul {
-    padding: 0 16px;
+.about-me-image {
+  text-align: center;
 
-    @include max-width-phone {
-      padding: 0;
-    }
+  img {
+    width: 120px;
+    height: auto;
   }
+}
+
+.about-me-info {
+  margin-bottom: 24px;
 
   li {
     margin-bottom: 8px;
   }
-
-  i {
-    color: $black-color;
-    width: 15px;
-    height: 16px;
-    margin-right: 10px;
-  }
-
-  a {
-    background: 0 0;
-    text-decoration: underline;
-
-    &:visited {
-      color: $black-color;
-    }
-  }
 }
 
 .about-me-introduce {
-  width: $image-size * 2;
-  margin: 16px auto 0;
-  line-height: 1.5;
-
-  @include max-width-phone {
-    width: 100%;
-    padding: 0 16px;
-    margin-top: 10px;
-    box-sizing: border-box;
-  }
-
-  @include max-width-small-phone {
-    font-size: 14px;
-  }
+  width: 100%;
+  line-height: 1.3;
 }

@@ -269,37 +269,20 @@ input[type="search"]::-webkit-search-cancel-button {
   -webkit-appearance: none;
 }
 
+/** 공통 **/
+
 h2 {
   text-align: center;
   color: $brand-color;
 }
 
-.slide-panel {
-  max-width: 700px;
+.portfolio-page {
   width: 100%;
-  margin: 130px auto;
+  margin: 0 auto;
+  padding: 16px 16px 40px 16px;
+  box-sizing: border-box;
 
-  @include max-width-phone {
-    margin-top: 100px;
-  }
-}
-
-#portfolio {
-  -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
-  -moz-animation: fadein 2s; /* Firefox < 16 */
-  -ms-animation: fadein 2s; /* Internet Explorer */
-  -o-animation: fadein 2s; /* Opera < 12.1 */
-  animation: fadein 2s;
-}
-
-@keyframes fadein {
-  0% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 0, 5;
-  }
-  100% {
-    opacity: 1;
+  @include md {
+    width: map-get($breakpoints, medium);
   }
 }

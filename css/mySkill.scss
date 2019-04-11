@@ -2,6 +2,12 @@
 @import "./breakpoint.scss";
 
 .my-skill {
+  h2 {
+    margin-bottom: 16px;
+  }
+}
+
+.my-skill-list {
   display: flex;
   flex-flow: row wrap;
   width: 100%;
@@ -9,7 +15,7 @@
   box-sizing: border-box;
 }
 
-.my-skill-panel {
+.my-skill-list-item {
   flex: auto;
   text-align: center;
   height: 100px;
@@ -26,7 +32,7 @@
     background-color: $brand-color;
     color: $white-color;
 
-    @include max-width-small-phone {
+    @include x-sm {
       font-size: 1.5rem;
     }
   }

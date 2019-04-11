@@ -1,8 +1,13 @@
 @import "./variables.scss";
+@import "./breakpoint.scss";
 
 $header-logo-height: 40px;
 $header-nav-height: 40px;
 $header-height: $header-logo-height + $header-nav-height;
+
+main {
+  padding-top: $header-height;
+}
 
 .portfolio-header {
   position: fixed;
@@ -31,10 +36,13 @@ $header-height: $header-logo-height + $header-nav-height;
   ul {
     margin-left: auto;
     margin-right: auto;
-    max-width: 420px;
     width: 100%;
     display: flex;
     justify-content: center;
+
+    @include md {
+      width: map-get($breakpoints, medium);
+    }
   }
 
   li {
