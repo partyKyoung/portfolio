@@ -3,7 +3,7 @@ require("../css/loading.scss");
 require("../css/header.scss");
 require("../css/aboutMe.scss");
 require("../css/mySkill.scss");
-// require("../css/myCareer.scss");
+require("../css/myCareer.scss");
 
 setTimeout(() => {
   const loading = document.getElementById("loading");

@@ -1,17 +1,10 @@
 @import "./variables.scss";
 @import "./breakpoint.scss";
 
-.my-skill {
-  h2 {
-    margin-bottom: 16px;
-  }
-}
-
 .my-skill-list {
   display: flex;
   flex-flow: row wrap;
   width: 100%;
-  padding: 16px;
   box-sizing: border-box;
 }
 
